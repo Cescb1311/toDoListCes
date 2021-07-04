@@ -7,33 +7,33 @@
     tools:context=".MainActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvToDoItems"
+        android:id="@+id/rvTareas"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/tvToDoTittle"
+        app:layout_constraintBottom_toTopOf="@+id/etTituloDeTarea"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/tvToDoTittle"
+        android:id="@+id/etTituloDeTarea"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Ingresa la tarea pendiente"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnAddToDo"
+        app:layout_constraintEnd_toStartOf="@+id/btnAgregarTarea"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnAddToDo"
+        android:id="@+id/btnAgregarTarea"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Agregar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnDeleteToDo" />
+        app:layout_constraintEnd_toStartOf="@+id/btnEliminarTarea" />
 
     <Button
-        android:id="@+id/btnDeleteToDo"
+        android:id="@+id/btnEliminarTarea"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Eliminar"
